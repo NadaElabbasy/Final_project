@@ -5,6 +5,7 @@ import 'firebase_options.dart';
 import 'package:flutter_navigation/views/homepage.dart';
 import 'package:flutter_navigation/views/sign_up.dart';
 import 'package:flutter_navigation/views/DetailsScreen.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 import 'package:flutter_navigation/views/Main_Category.dart';
 import 'package:flutter_navigation/views/New_Home.dart';
@@ -23,7 +24,7 @@ class App extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
